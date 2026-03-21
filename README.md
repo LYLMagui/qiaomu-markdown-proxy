@@ -22,6 +22,10 @@
   pip install playwright beautifulsoup4 lxml
   playwright install chromium
   ```
+- [ ] （代理降级）[agent-fetch](https://github.com/teng-lin/agent-fetch) — 当在线代理都失败时的本地回退工具
+  ```bash
+  npx agent-fetch --help  # 无需预装，npx 自动下载
+  ```
 - [ ] （飞书抓取）环境变量 `FEISHU_APP_ID` 和 `FEISHU_APP_SECRET`
   ```bash
   echo $FEISHU_APP_ID  # 验证已配置
@@ -52,7 +56,7 @@ ls ~/.claude/skills/markdown-proxy/SKILL.md
 
 1. **r.jina.ai** — 内容最完整，保留图片链接
 2. **defuddle.md** — 输出更干净，带 YAML frontmatter
-3. **agent-fetch** — 本地工具，无需网络代理
+3. **[agent-fetch](https://github.com/teng-lin/agent-fetch)** — 本地工具，无需网络代理
 4. **defuddle CLI** — 本地 CLI，适合普通网页
 
 ## 飞书文档支持
@@ -79,6 +83,7 @@ ls ~/.claude/skills/markdown-proxy/SKILL.md
 
 - [r.jina.ai](https://r.jina.ai) — Jina AI 提供的免费 URL 转 Markdown 代理
 - [defuddle.md](https://defuddle.md) — 干净的文章提取服务
+- [agent-fetch](https://github.com/teng-lin/agent-fetch) — 本地 URL 内容提取工具
 - [Playwright](https://playwright.dev/) — 微信公众号抓取的浏览器自动化
 - [飞书开放平台](https://open.feishu.cn/) — 飞书文档 API
 

@@ -91,6 +91,7 @@ curl -sL "https://defuddle.md/{original_url}" 2>/dev/null
 ### Step 3: 如果两个代理都失败，回退本地工具
 
 ```bash
+# agent-fetch: https://github.com/teng-lin/agent-fetch
 npx agent-fetch "{original_url}" --json
 # 或
 defuddle parse "{original_url}" -m -j
@@ -115,10 +116,10 @@ defuddle parse "{original_url}" -m -j
 
 ### Step 5: 保存文件（默认执行）
 
-将抓取的 Markdown 内容保存到知识库：
+将抓取的 Markdown 内容保存到本地：
 
 ```
-保存路径：~/乔木新知识库/20-29 学习/24 好文剪藏/24.02 剪藏内容/{title}.md
+默认保存路径：~/Downloads/{title}.md
 文件格式：YAML frontmatter（title, author, date, url, source）+ Markdown 正文
 ```
 
